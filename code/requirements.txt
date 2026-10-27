@@ -1,0 +1,18 @@
+# BlockCNN IEEE code artifact — dependencies
+#
+# This package ships the verification harnesses only (the core BlockCNN
+# implementation is withheld; see README). To RUN the harnesses you must also
+# supply the core `model/` package and (for the production network path) the
+# external `artoo` framework.
+
+# Harness runtime:
+torch>=2.0
+einops
+tqdm
+numpy
+
+# Required only when the withheld core `model/` package is supplied:
+# artoo>=0.0.1
+# scipy==1.2.0
+# simpleitk==1.2.2-labelset
+# torchgeometry==0.1.2
